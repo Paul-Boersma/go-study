@@ -1,3 +1,4 @@
 {
-  "workbench.colorTheme": "Cobalt2 Italic"
+  "workbench.colorTheme": "Cobalt2 Italic",
+  "editor.suggestOnTriggerCharacters": true
 }
