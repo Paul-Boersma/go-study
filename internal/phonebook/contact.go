@@ -3,8 +3,8 @@ package phonebook
 import "fmt"
 
 type Contact struct {
-	Name  string
-	Phone string
+	Name  string `json:"name"`
+	Phone string `json:"phone"`
 }
 
 func createContact() (Contact, error) {

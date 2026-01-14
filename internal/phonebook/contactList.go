@@ -26,3 +26,7 @@ func (c ContactList) SearchByPhone(phone string) Contact {
 	}
 	return Contact{}
 }
+
+func (c ContactList) DeleteContact(contact Contact) {
+	delete(c, contact.Name)
+}

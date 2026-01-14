@@ -2,7 +2,7 @@ package phonebook
 
 import "fmt"
 
-func RunProgram(contactList ContactList) {
+func RunProgram(contactList *ContactList) {
 	for {
 		option, err := getOption()
 		if err != nil {
@@ -44,6 +44,7 @@ func RunProgram(contactList ContactList) {
 			}
 		case "Exit":
 			exitProgram()
+			return
 		default:
 			fmt.Println("Program exited unexpectedly")
 			return
@@ -71,7 +72,7 @@ func getOption() (option string, err error) {
 	case 3:
 		option = "Search contacts"
 	case 4:
-		option = "Exit Program"
+		option = "Exit"
 	default:
 
 	}
