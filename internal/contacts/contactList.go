@@ -1,11 +1,11 @@
-package phonebook
+package contacts
 
 import "fmt"
 
 type ContactList map[string]Contact
 
 func (c ContactList) Add(contact Contact) {
-	c[contact.Name] = Contact{contact.Name, contact.Phone}
+	c[contact.Name] = contact
 }
 
 func (c ContactList) List() {
@@ -29,4 +29,8 @@ func (c ContactList) SearchByPhone(phone string) Contact {
 
 func (c ContactList) DeleteContact(contact Contact) {
 	delete(c, contact.Name)
+}
+
+func (c ContactList) EditContact(contact Contact) {
+	// implementation of EditContact
 }
