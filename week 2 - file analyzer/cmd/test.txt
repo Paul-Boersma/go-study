@@ -1,0 +1,4 @@
+Some lines of text
+Test Test
+
+How many words does this file contain?
